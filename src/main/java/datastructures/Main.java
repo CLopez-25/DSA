@@ -53,6 +53,7 @@ public class Main {
 }
 
 // Big 0: is time complexity vs space complexity of an algorithm or data structure that produces the same output for a given input.
+// Big 0 measure worst case scenario, not average case scenario.
 // code 1 can be faster than code 2 in terms of time complexity but code 2 can be more efficient in terms of space complexity
 // if you can simplify your code to be 0(n^2) it will be much faster than 0(n^3)
 
@@ -61,4 +62,12 @@ public class Main {
 // 0(log n) is the second most efficient Big 0.
 
 // some sorting algorithms use 0(n log n) with quick sort and merge sort.
+
+//          0(1)
+// -adding/removing at the end of an array/array list (one operation for both)
+// -looking for an item by index
+
+//          0(n)
+// -adding/removing at the beginning of an array/array list (everything has to be re-indexed)
+// -looking for an item by value
 
