@@ -1,6 +1,6 @@
-package datastructures;
+package classes;
 
-public class Main {
+public class BigO {
 
     //    n + n = 2n or O(2n)
     // the constant(2) is being dropped therefor this is example of O(n):
