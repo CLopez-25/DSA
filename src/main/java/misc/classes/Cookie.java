@@ -1,4 +1,4 @@
-package classes;
+package misc.classes;
 
 public class Cookie {
     private String color;
