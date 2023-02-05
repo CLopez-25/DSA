@@ -1,4 +1,4 @@
-package misc.pointers;
+package datastructures.misc.pointers;
 
 import java.util.HashMap;
 

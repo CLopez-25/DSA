@@ -1,4 +1,4 @@
-package misc;
+package datastructures.misc;
 
 public class BigO {
 

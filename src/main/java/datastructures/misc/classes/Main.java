@@ -1,4 +1,4 @@
-package misc.classes;
+package datastructures.misc.classes;
 
 public class Main {
 
