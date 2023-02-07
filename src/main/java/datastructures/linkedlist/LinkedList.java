@@ -2,6 +2,7 @@ package datastructures.linkedlist;
 
 public class LinkedList {
 
+//    first exercise of course completed below:
     private Node head;
     private Node tail;
     private int length;
@@ -16,6 +17,12 @@ public class LinkedList {
         }
     }
         //    ///////////////////////////
+
+    public static void main(String[] args) {
+
+        LinkedList myLinkedList = new LinkedList(4);
+
+    }
 
     public LinkedList(int value) {
         Node newNode = new Node(value);
