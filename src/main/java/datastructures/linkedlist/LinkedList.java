@@ -7,7 +7,8 @@ public class LinkedList {
     private Node tail;
     private int length;
 
-        //    Nested class below:   ////////////// in case we wanna put it in its own class file inside linkedList package. Answer for constructor and printList exercises is also below:
+        //    Answer for constructor and printList exercises is also below:
+        //    whenever a method needs to create a node it will call this class to create it
     class Node {
         int value;
         Node next;
@@ -16,6 +17,8 @@ public class LinkedList {
             this.value = value;
         }
     }
+
+        //  ^^Nested class in case we want to put it in its own class file inside linkedList package.^^
         //    ///////////////////////////
 
     public LinkedList(int value) {
@@ -24,6 +27,8 @@ public class LinkedList {
         tail = newNode;
         length = 1;
     }
+
+
     public void printList(){
         Node temp = head;
         while (temp != null) {

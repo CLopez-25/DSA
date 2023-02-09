@@ -11,6 +11,7 @@ public class Main {
         myLinkedList.getTail();
         myLinkedList.getLength();
 
+        System.out.println("\nLinked List:");
         myLinkedList.printList();
 
     }
