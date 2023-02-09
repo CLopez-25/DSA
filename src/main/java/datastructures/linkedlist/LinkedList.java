@@ -16,22 +16,23 @@ public class LinkedList {
         Node(int value) {
             this.value = value;
         }
+//        both values have been set to be equal ^^
     }
 
-        //  ^^Nested class in case we want to put it in its own class file inside linkedList package.^^
-    /////////////                 End of exercise                               /////////////////////////////////////
-
-    public LinkedList(int value) {
-        Node newNode = new Node(value);
-        head = newNode;
-        tail = newNode;
-        length = 1;
-    }
+        //  ^^Nested class in case we want to put it in its own class file inside linkedList package from a permissions standpoint.^^
+//    two variables = value and next. value is an integer and next is of type node which means that this variable can point to a node. similar to pointers where we had a variable of type hash map.
+        public LinkedList(int value) {
+            Node newNode = new Node(value);
+            head = newNode;
+            tail = newNode;
+            length = 1;
+        }
+    /////////////                 End of exercise                       /////////////////////////////////////
 
 
     public void printList(){
         Node temp = head;
-        while (temp != null) {
+        while (temp != null) {       // while loop prints out temp.value and then temp = temp.next will cause temp to start moving across the linked list until temp is null, then it will stop.
             System.out.println(temp.value);
             temp = temp.next;
         }
@@ -50,6 +51,6 @@ public class LinkedList {
     public void getLength() {
         System.out.println("Length: " + length);
     }
-//  ^^  DID NOT DO INT BECAUSE WE WANT TO ACTUALLY PRINT THE LENGTH OUT SO IT'S BEEN FORMATTED LIKE SO^^
+//  ^^  DID NOT DO INT BECAUSE WE WANT TO ACTUALLY PRINT THE LENGTH OUT SO IT'S BEEN FORMATTED LIKE THE OTHER TWO GETTERS^^
 
 }
