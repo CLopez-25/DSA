@@ -2,12 +2,12 @@ package datastructures.linkedlist;
 
 public class LinkedList {
 
-//    first exercise of course completed below:
+//    first exercise of course completed below: class variables, node class, and constructor in Main.
     private Node head;
     private Node tail;
     private int length;
 
-        //    Answer for constructor and printList exercises is also below:
+
         //    whenever a method needs to create a node it will call this class to create it
     class Node {
         int value;
@@ -19,7 +19,7 @@ public class LinkedList {
     }
 
         //  ^^Nested class in case we want to put it in its own class file inside linkedList package.^^
-        //    ///////////////////////////
+    /////////////                 End of exercise                               /////////////////////////////////////
 
     public LinkedList(int value) {
         Node newNode = new Node(value);
@@ -37,6 +37,8 @@ public class LinkedList {
         }
     }
 
+
+    //    Getters for head, tail, and length.
     public void getHead() {
         System.out.println("Head: " + head.value);
     }
@@ -49,7 +51,5 @@ public class LinkedList {
         System.out.println("Length: " + length);
     }
 //  ^^  DID NOT DO INT BECAUSE WE WANT TO ACTUALLY PRINT THE LENGTH OUT SO IT'S BEEN FORMATTED LIKE SO^^
-
-/////////////                 End of exercise                               /////////////////////////////////////
 
 }
