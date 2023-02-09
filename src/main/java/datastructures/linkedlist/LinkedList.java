@@ -7,7 +7,7 @@ public class LinkedList {
     private Node tail;
     private int length;
 
-        //    Nested class below:   ////////////// in case we wanna put it in its own class file inside linkedlist package
+        //    Nested class below:   ////////////// in case we wanna put it in its own class file inside linkedList package. Answer for constructor and printList exercises is also below:
     class Node {
         int value;
         Node next;
@@ -44,5 +44,7 @@ public class LinkedList {
         System.out.println("Length: " + length);
     }
 //  ^^  DID NOT DO INT BECAUSE WE WANT TO ACTUALLY PRINT THE LENGTH OUT SO IT'S BEEN FORMATTED LIKE SO^^
+
+/////////////                 End of exercise                               /////////////////////////////////////
 
 }

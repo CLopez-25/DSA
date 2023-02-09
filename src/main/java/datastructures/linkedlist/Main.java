@@ -1,6 +1,6 @@
 package datastructures.linkedlist;
 
-// linkedlist constructor:
+// linkedList constructor:
 public class Main {
 
     public static void main(String[] args) {
