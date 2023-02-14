@@ -54,3 +54,6 @@ public class LinkedList {
 //  ^^  DID NOT DO INT BECAUSE WE WANT TO ACTUALLY PRINT THE LENGTH OUT SO IT'S BEEN FORMATTED LIKE THE OTHER TWO GETTERS^^
 
 }
+
+
+        // Node = An individual part of a larger data structure //
