@@ -1,5 +1,7 @@
 package datastructures.linkedlist;
 
+// Node = An individual part of a larger data structure //
+
 public class LinkedList {
 
 //    first exercise of course completed below: class variables, node class, and constructor in Main.
@@ -53,7 +55,22 @@ public class LinkedList {
     }
 //  ^^  DID NOT DO INT BECAUSE WE WANT TO ACTUALLY PRINT THE LENGTH OUT SO IT'S BEEN FORMATTED LIKE THE OTHER TWO GETTERS^^
 
+    public void makeEmpty(){
+        head = null;
+        tail = null;
+        length = 0;
+    }
+
+    public void append(int value) {
+        Node newNode = new Node(value);
+        if (length == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+        length++;
+    }
+
 }
-
-
-        // Node = An individual part of a larger data structure //
