@@ -62,15 +62,15 @@ public class LinkedList {
     }
 
     public void append(int value) {
-        Node newNode = new Node(value);
-        if (length == 0) {
+        Node newNode = new Node(value);  // created a new node
+        if (length == 0) {              // this is if we have an empty linked list
             head = newNode;
             tail = newNode;
-        } else {
+        } else {                        // this is if there are items in the link linked list
             tail.next = newNode;
             tail = newNode;
         }
-        length++;
+        length++;                      // increasing the length by one
     }
 
 }
