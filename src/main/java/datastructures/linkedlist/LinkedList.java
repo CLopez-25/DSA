@@ -55,7 +55,7 @@ public class LinkedList {
     }
 //  ^^  DID NOT DO INT BECAUSE WE WANT TO ACTUALLY PRINT THE LENGTH OUT SO IT'S BEEN FORMATTED LIKE THE OTHER TWO GETTERS^^
 
-    public void makeEmpty(){
+    public void makeEmpty(){        // method to use for emptying the linked list
         head = null;
         tail = null;
         length = 0;
