@@ -29,7 +29,7 @@ public class LinkedList {
             tail = newNode;
             length = 1;
         }
-    /////////////                 End of exercise                       /////////////////////////////////////
+    //      End of exercise
 
 
     public void printList(){
@@ -61,8 +61,10 @@ public class LinkedList {
         length = 0;
     }
 
+
+        // solution for append exercise:
     public void append(int value) {
-        Node newNode = new Node(value);  // created a new node
+        Node newNode = new Node(value);  // creates a new node
         if (length == 0) {              // this is if we have an empty linked list
             head = newNode;
             tail = newNode;
@@ -71,6 +73,12 @@ public class LinkedList {
             tail = newNode;
         }
         length++;                      // increasing the length by one
+    }
+        // end of append exercise
+
+    // solution for remove last exercise:
+    public void removeLast(){
+
     }
 
 }
