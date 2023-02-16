@@ -94,5 +94,6 @@ public class LinkedList {
         }
         return temp;
     }
+    // end of remove last exercise
 
 }
