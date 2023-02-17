@@ -48,6 +48,17 @@ public class Main {
         // end of append solution ///
 
         // prepend solution
+        LinkedList myLinkedList = new LinkedList(2);
+        myLinkedList.append(3);
+
+        myLinkedList.prepend(1);
+
+        myLinkedList.printList();
+
+        // end of prepend solution ///
+
+        // remove first solution
+
 
     }
 
