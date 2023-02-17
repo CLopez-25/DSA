@@ -48,16 +48,15 @@ public class Main {
         // end of append solution ///
 
         // prepend solution
-        LinkedList myLinkedList = new LinkedList(2);
+        LinkedList myLinkedList = new LinkedList(2);   // created linked list with nodes with the values of 2 and 3
         myLinkedList.append(3);
 
-        myLinkedList.prepend(1);
+        myLinkedList.prepend(1);                    // prepended a node with the value of 1 to the beginning of the linked list
 
-        myLinkedList.printList();
+        myLinkedList.printList();                       // prints out the linked list
 
         // end of prepend solution ///
 
-        // remove first solution
 
 
     }
