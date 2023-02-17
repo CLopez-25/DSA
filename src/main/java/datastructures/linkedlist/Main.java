@@ -17,6 +17,8 @@ public class Main {
 //        System.out.println("\nLinked List:");
 //        myLinkedList.printList();
 
+        // end of constructor exercise ///
+
         // append exercise solution
 //        LinkedList myLinkedList = new LinkedList(1);
 //        myLinkedList.makeEmpty();           // empties the list
@@ -30,16 +32,22 @@ public class Main {
 //        System.out.println("\nLinked List:");
 //        myLinkedList.printList();
 
-        // remove last exercise solution
-        LinkedList myLinkedList = new LinkedList(1);
-        myLinkedList.append(2);                           // creating a linked list with nodes with the value of one and two.
+        // end of append solution ///
 
-        // (2) Items - Returns 2 Nodes
-        System.out.println(myLinkedList.removeLast().value);    // adding .value returns the node with the value of 2
-        // (1) Item - Returns 1 Node
-        System.out.println(myLinkedList.removeLast().value);    // adding .value returns the node with the value of 1
-        // (0) Items - Returns null
-        System.out.println(myLinkedList.removeLast());  // we don't need to add .value because we know it should return null (null pointer exception if .value is added)
+        // remove last exercise solution
+//        LinkedList myLinkedList = new LinkedList(1);
+//        myLinkedList.append(2);                           // creating a linked list with nodes with the value of one and two.
+//
+//        // (2) Items - Returns 2 Nodes
+//        System.out.println(myLinkedList.removeLast().value);    // adding .value returns the node with the value of 2
+//        // (1) Item - Returns 1 Node
+//        System.out.println(myLinkedList.removeLast().value);    // adding .value returns the node with the value of 1
+//        // (0) Items - Returns null
+//        System.out.println(myLinkedList.removeLast());  // we don't need to add .value because we know it should return null (null pointer exception if .value is added)
+
+        // end of append solution ///
+
+        // prepend solution
 
     }
 

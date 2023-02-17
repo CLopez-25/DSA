@@ -29,7 +29,7 @@ public class LinkedList {
             tail = newNode;
             length = 1;
         }
-    //      End of exercise
+    //      End of exercise  /////
 
 
     public void printList(){
@@ -74,7 +74,7 @@ public class LinkedList {
         }
         length++;                      // increasing the length by one
     }
-        // end of append exercise
+        //// end of append exercise  ////
 
     // solution for remove last method:
     public Node removeLast(){
@@ -95,6 +95,20 @@ public class LinkedList {
         }
         return temp;                    // all we have left to do is return that node
     }
-    // end of remove last method
+        // end of remove last method  ///
+
+    // prepend method:
+    public void prepend(int value){
+        Node newNode = new Node(value);  // creating a new node
+        if (length == 0) {                  // if statement is for when there are no items in the linked list
+            head = newNode;
+            tail = newNode;             // head and tail will point to the new node
+        } else {                        // else statement is for when there are items in the linked list
+            newNode.next = head;
+            head = newNode;             // the new node will be added to the beginning of the linked list and will now become the head
+        }
+        length++;                       // we will increase the linked list length by 1.
+    }
+        // end of prepend method ///
 
 }
