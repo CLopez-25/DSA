@@ -183,4 +183,8 @@ public class LinkedList {
         return temp;
     }
     // end of remove method ///
+
+    // reverse method:
+
+    // end of reverse method ///
 }

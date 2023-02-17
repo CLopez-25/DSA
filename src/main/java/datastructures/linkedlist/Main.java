@@ -105,6 +105,10 @@ public class Main {
 
         myLinkedList.printList();
         // end of remove solution ///
+
+        // reverse constructor:
+
+        // end of reverse solution ///
     }
 
 }
