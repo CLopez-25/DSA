@@ -57,7 +57,7 @@ public class Main {
         // end of prepend solution ///
 
         // removeFirst solution:
-        LinkedList myLinkedList = new LinkedList(2);
+        LinkedList myLinkedList = new LinkedList(2);    // creating a linked list with nodes with the value of 2 and 1.
         myLinkedList.append(1);
 
         // (2) Items - Returns 2 Nodes
@@ -66,6 +66,10 @@ public class Main {
         System.out.println(myLinkedList.removeFirst().value);
         // (0) Items - Returns null
         System.out.println(myLinkedList.removeFirst());
+
+        // end of removeFirst solution ///
+
+
     }
 
 }
