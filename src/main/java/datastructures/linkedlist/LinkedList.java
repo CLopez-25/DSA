@@ -78,7 +78,7 @@ public class LinkedList {
 
     // solution for remove last exercise:
     public Node removeLast(){
-        if (length == 0) return null;   // if the linked list is equal to 0 we return null;
+        if (length == 0) return null;   // if the linked list is equal to 0 we return null; this linked list has a length of 1.
         Node temp = head;
         Node pre = head;
         while (temp.next != null) {     // while temp.next is not equal to null,
@@ -88,7 +88,8 @@ public class LinkedList {
         tail = pre;                     // once we are broken out of the while loop when temp.next is null, tail will be set equal to pre
         tail.next = null;               // tail.next is set equal to null to break out the last node from the end
         length--;                       // we are decrementing the length by one
-        if (length == 0) {
+        // below is our edge case for when we only have one node
+        if (length == 0) {              // current line is same as beginning of the method but this is happening after we have decremented the length; this linked list has a length of 0.
             head = null;
             tail = null;
         }
