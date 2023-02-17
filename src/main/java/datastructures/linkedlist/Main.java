@@ -35,9 +35,9 @@ public class Main {
         myLinkedList.append(2);                           // creating a linked list with nodes with the value of one and two.
 
         // (2) Items - Returns 2 Nodes
-        System.out.println(myLinkedList.removeLast().value);
+        System.out.println(myLinkedList.removeLast().value);    // adding .value returns the node with the value of 2
         // (1) Item - Returns 1 Node
-        System.out.println(myLinkedList.removeLast().value);
+        System.out.println(myLinkedList.removeLast().value);    // adding .value returns the node with the value of 1
         // (0) Items - Returns null
         System.out.println(myLinkedList.removeLast());  // we don't need to add .value because we know it should return null
 
