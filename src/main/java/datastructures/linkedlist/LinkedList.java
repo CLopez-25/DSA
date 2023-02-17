@@ -111,4 +111,20 @@ public class LinkedList {
     }
         // end of prepend method ///
 
+
+    // remove first method:
+    public Node removeFirst(){
+        if (length == 0) return null;   // the linked list started with one item in it
+        Node temp = head;
+        head = head.next;
+        temp.next = null;               // this will break the first node off the linked list
+        length--;                       // the linked list will be decremented by 1.
+        if (length == 0){               // the linked list starts with 0 items in it. same situation as remove last method with their being two similar if statements.
+            tail = null;
+        }
+        return temp;                    // temp is the pointer to the node that we just removed
+    }
+    // end of removeFirst method ///
+
+
 }

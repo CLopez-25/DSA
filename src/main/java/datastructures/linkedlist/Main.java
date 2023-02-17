@@ -5,9 +5,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-//        this is creating a new linked list. variable mylinkedist is of type linked list which means it can point to a linked list.
-
         // constructor exercise solution
+        // this is creating a new linked list. variable myLinkedList is of type linked list which means it can point to a linked list.
 //        LinkedList myLinkedList = new LinkedList(4);  // creating our new linked list with a node with a value of 4 (value was from prev course section).
 
 //        myLinkedList.getHead();
@@ -34,7 +33,7 @@ public class Main {
 
         // end of append solution ///
 
-        // remove last exercise solution
+        // removeLast exercise solution
 //        LinkedList myLinkedList = new LinkedList(1);
 //        myLinkedList.append(2);                           // creating a linked list with nodes with the value of one and two.
 //
@@ -45,19 +44,19 @@ public class Main {
 //        // (0) Items - Returns null
 //        System.out.println(myLinkedList.removeLast());  // we don't need to add .value because we know it should return null (null pointer exception if .value is added)
 
-        // end of append solution ///
+        // end of removeLast solution ///
 
         // prepend solution
-        LinkedList myLinkedList = new LinkedList(2);   // created linked list with nodes with the values of 2 and 3
-        myLinkedList.append(3);
-
-        myLinkedList.prepend(1);                    // prepended a node with the value of 1 to the beginning of the linked list
-
-        myLinkedList.printList();                       // prints out the linked list
+//        LinkedList myLinkedList = new LinkedList(2);   // created linked list with nodes with the values of 2 and 3
+//        myLinkedList.append(3);
+//
+//        myLinkedList.prepend(1);                    // prepended a node with the value of 1 to the beginning of the linked list
+//
+//        myLinkedList.printList();                       // prints out the linked list
 
         // end of prepend solution ///
 
-
+        // removeFirst solution:
 
     }
 
