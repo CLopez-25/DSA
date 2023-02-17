@@ -34,8 +34,8 @@ public class LinkedList {
 
     public void printList(){
         Node temp = head;
-        while (temp != null) {       // while loop prints out temp.value and then temp = temp.next will cause temp to start moving across the linked list until temp is null, then it will stop.
-            System.out.println(temp.value);
+        while (temp != null) {       // while loop prints out temp.value and then
+            System.out.println(temp.value);     //temp = temp.next will cause temp to start moving across the linked list until temp is null, then it will stop.
             temp = temp.next;
         }
     }
@@ -126,5 +126,18 @@ public class LinkedList {
     }
     // end of removeFirst method ///
 
+    // Get method:
+    public Node get(int index){
+        if (index < 0 || index >= length) {
+            return null;                        // wwe cannot get a node at the index of -1(index < 0) or greater than the length of our linked list(index >= length).
+        }
+        Node temp = head;                   // temp is the variable we are using to return the node and set it equal to head.
+        for (int i = 0; i < index; i++){
+            temp = temp.next;               // temp variable will be moved forward inside for loop by saying temp = temp.next
+        }
+        return temp;                        // once we reach the node at the index we want, we return temp.
+    }
+
+    // end of Get method ///
 
 }
