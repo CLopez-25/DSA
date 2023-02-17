@@ -149,4 +149,8 @@ public class LinkedList {
         return false;
     }
     // end of Set method ///
+
+    // insert method:
+
+    // end of insert method ///
 }

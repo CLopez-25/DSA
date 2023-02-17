@@ -15,7 +15,6 @@ public class Main {
 
 //        System.out.println("\nLinked List:");
 //        myLinkedList.printList();
-
         // end of constructor exercise ///
 
         // append exercise solution
@@ -30,7 +29,6 @@ public class Main {
 
 //        System.out.println("\nLinked List:");
 //        myLinkedList.printList();
-
         // end of append solution ///
 
         // removeLast exercise solution
@@ -43,7 +41,6 @@ public class Main {
 //        System.out.println(myLinkedList.removeLast().value);    // adding .value returns the node with the value of 1
 //        // (0) Items - Returns null
 //        System.out.println(myLinkedList.removeLast());  // we don't need to add .value because we know it should return null (null pointer exception if .value is added)
-
         // end of removeLast solution ///
 
         // prepend solution
@@ -53,7 +50,6 @@ public class Main {
 //        myLinkedList.prepend(1);                    // prepended a node with the value of 1 to the beginning of the linked list
 //
 //        myLinkedList.printList();                       // prints out the linked list
-
         // end of prepend solution ///
 
         // removeFirst solution:
@@ -66,7 +62,6 @@ public class Main {
 //        System.out.println(myLinkedList.removeFirst().value);
 //        // (0) Items - Returns null
 //        System.out.println(myLinkedList.removeFirst());
-
         // end of removeFirst solution ///
 
         // Get solution:
@@ -78,7 +73,6 @@ public class Main {
 //        System.out.println(myLinkedList.get(2).value + "\n");  // prints out the node at the index value of 2
 //
 //        myLinkedList.printList();                           // prints out entire linked list with the node still in the list
-
         // end of get solution ///
 
         // Set solution:
@@ -90,8 +84,11 @@ public class Main {
         myLinkedList.set(1, 4);
 
         myLinkedList.printList();
-
         // end of Set solution ///
+
+        // insert solution:
+
+        // end of insert solution ///
     }
 
 }
