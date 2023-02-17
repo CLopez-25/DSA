@@ -94,6 +94,10 @@ public class Main {
 
         myLinkedList.printList();
         // end of insert solution ///
+
+        // remove solution:
+
+        // end of remove solution ///
     }
 
 }

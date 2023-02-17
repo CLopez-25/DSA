@@ -169,4 +169,8 @@ public class LinkedList {
         return true;
     }
     // end of insert method ///
+
+    // remove method:
+
+    // end of remove method ///
 }
