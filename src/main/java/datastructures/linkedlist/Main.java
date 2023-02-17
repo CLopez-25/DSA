@@ -32,7 +32,7 @@ public class Main {
 
         // remove last exercise solution
         LinkedList myLinkedList = new LinkedList(1);
-        myLinkedList.append(2);
+        myLinkedList.append(2);                           // creating a linked list with nodes with the value of one and two.
 
         // (2) Items - Returns 2 Nodes
         System.out.println(myLinkedList.removeLast().value);
