@@ -41,9 +41,6 @@ public class Main {
         // (0) Items - Returns null
         System.out.println(myLinkedList.removeLast());  // we don't need to add .value because we know it should return null (null pointer exception if .value is added)
 
-        System.out.println("\nLinked List:");
-        myLinkedList.printList();
-
     }
 
 }

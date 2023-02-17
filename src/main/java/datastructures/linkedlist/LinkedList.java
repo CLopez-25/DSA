@@ -76,7 +76,7 @@ public class LinkedList {
     }
         // end of append exercise
 
-    // solution for remove last exercise:
+    // solution for remove last method:
     public Node removeLast(){
         if (length == 0) return null;   // if the linked list is equal to 0 we return null; this linked list has a length of 1.
         Node temp = head;
@@ -90,11 +90,11 @@ public class LinkedList {
         length--;                       // we are decrementing the length by one
         // below is our edge case for when we only have one node
         if (length == 0) {              // current line is same as beginning of the method but this is happening after we have decremented the length; this linked list has a length of 0.
-            head = null;
+            head = null;                // if the linked list is starting at 0 then head and tail has to equal null
             tail = null;
         }
-        return temp;
+        return temp;                    // all we have left to do is return that node
     }
-    // end of remove last exercise
+    // end of remove last method
 
 }
