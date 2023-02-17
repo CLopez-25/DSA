@@ -62,7 +62,7 @@ public class LinkedList {
     }
 
 
-        // solution for append exercise:
+        // append method:
     public void append(int value) {
         Node newNode = new Node(value);  // creates a new node
         if (length == 0) {              // this is if we have an empty linked list
@@ -76,7 +76,7 @@ public class LinkedList {
     }
         //// end of append exercise  ////
 
-    // solution for remove last method:
+    // removeLast method:
     public Node removeLast(){
         if (length == 0) return null;   // if the linked list is equal to 0 we return null; this linked list has a length of 1.
         Node temp = head;
@@ -137,7 +137,10 @@ public class LinkedList {
         }
         return temp;                        // once we reach the node at the index we want, we return temp.
     }
-
     // end of Get method ///
 
+    // Set method:
+
+
+    // end of Set method ///
 }

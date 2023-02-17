@@ -70,16 +70,20 @@ public class Main {
         // end of removeFirst solution ///
 
         // Get solution:
-        LinkedList myLinkedList = new LinkedList(0);
-        myLinkedList.append(1);
-        myLinkedList.append(2);
-        myLinkedList.append(3);                                 // created linked list with nodes with values of 1-3
-
-        System.out.println(myLinkedList.get(2).value + "\n");  // prints out the node at the index value of 2
-
-        myLinkedList.printList();                           // prints out entire linked list with the node still in the list
+//        LinkedList myLinkedList = new LinkedList(0);
+//        myLinkedList.append(1);
+//        myLinkedList.append(2);
+//        myLinkedList.append(3);                                 // created linked list with nodes with values of 1-3
+//
+//        System.out.println(myLinkedList.get(2).value + "\n");  // prints out the node at the index value of 2
+//
+//        myLinkedList.printList();                           // prints out entire linked list with the node still in the list
 
         // end of get solution ///
+
+        // Set solution:
+
+        // end of Set solution ///
     }
 
 }
