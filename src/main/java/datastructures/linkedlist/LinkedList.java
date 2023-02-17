@@ -77,7 +77,7 @@ public class LinkedList {
         //// end of append exercise  ////
 
     // removeLast method:
-    public Node removeLast(){
+    public Node removeLast(){            // returning null because it has a return type of Node
         if (length == 0) return null;   // if the linked list is equal to 0 we return null; this linked list has a length of 1.
         Node temp = head;
         Node pre = head;
@@ -113,7 +113,7 @@ public class LinkedList {
 
 
     // remove first method:
-    public Node removeFirst(){
+    public Node removeFirst(){           // returning null because it has a return type of Node
         if (length == 0) return null;   // the linked list started with one item in it
         Node temp = head;
         head = head.next;
@@ -127,7 +127,7 @@ public class LinkedList {
     // end of removeFirst method ///
 
     // Get method:
-    public Node get(int index){
+    public Node get(int index){                 // returning null because it has a return type of Node
         if (index < 0 || index >= length) {
             return null;                        // wwe cannot get a node at the index of -1(index < 0) or greater than the length of our linked list(index >= length).
         }
@@ -171,6 +171,16 @@ public class LinkedList {
     // end of insert method ///
 
     // remove method:
-
+    public Node remove(int index){                  // first if statement is returning null because it has a return type of Node.
+        if (index < 0 || index >= length) return null;
+        if (index == 0) return removeFirst();       // removeFirst also has return type of Node so we can use it here
+        if (index == length - 1) return removeLast();   // removeLast also has return type of Node so we can use it here
+        Node prev = get(index - 1);
+        Node temp = prev.next;
+        prev.next = temp.next;
+        temp.next = null;
+        length--;
+        return temp;
+    }
     // end of remove method ///
 }

@@ -87,16 +87,23 @@ public class Main {
         // end of Set solution ///
 
         // insert solution:
-        LinkedList myLinkedList = new LinkedList(0);
-        myLinkedList.append(2);
-
-        myLinkedList.insert(1, 1);
-
-        myLinkedList.printList();
+//        LinkedList myLinkedList = new LinkedList(0);
+//        myLinkedList.append(2);
+//
+//        myLinkedList.insert(1, 1);
+//
+//        myLinkedList.printList();
         // end of insert solution ///
 
         // remove solution:
+        LinkedList myLinkedList = new LinkedList(11);
+        myLinkedList.append(3);
+        myLinkedList.append(23);
+        myLinkedList.append(7);
 
+        myLinkedList.remove(2);
+
+        myLinkedList.printList();
         // end of remove solution ///
     }
 
