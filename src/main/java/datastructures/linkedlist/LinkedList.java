@@ -140,7 +140,13 @@ public class LinkedList {
     // end of Get method ///
 
     // Set method:
-
-
+    public boolean set(int index, int value) {
+        Node temp = get(index);
+        if (temp != null) {
+            temp.value = value;
+            return true;
+        }
+        return false;
+    }
     // end of Set method ///
 }
