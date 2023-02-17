@@ -39,7 +39,7 @@ public class Main {
         // (1) Item - Returns 1 Node
         System.out.println(myLinkedList.removeLast().value);    // adding .value returns the node with the value of 1
         // (0) Items - Returns null
-        System.out.println(myLinkedList.removeLast());  // we don't need to add .value because we know it should return null
+        System.out.println(myLinkedList.removeLast());  // we don't need to add .value because we know it should return null (null pointer exception if .value is added)
 
         System.out.println("\nLinked List:");
         myLinkedList.printList();

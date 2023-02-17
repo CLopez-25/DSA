@@ -78,16 +78,16 @@ public class LinkedList {
 
     // solution for remove last exercise:
     public Node removeLast(){
-        if (length == 0) return null;
+        if (length == 0) return null;   // if the linked list is equal to 0 we return null;
         Node temp = head;
         Node pre = head;
-        while (temp.next != null) {
-            pre = temp;
-            temp = temp.next;
+        while (temp.next != null) {     // while temp.next is not equal to null,
+            pre = temp;                 // pre is set equal to temp in the first iteration of the while loop
+            temp = temp.next;           // temp is set equal to temp.next in the next iteration until temp.next is null.
         }
-        tail = pre;
-        tail.next = null;
-        length--;
+        tail = pre;                     // once we are broken out of the while loop when temp.next is null, tail will be set equal to pre
+        tail.next = null;               // tail.next is set equal to null to break out the last node from the end
+        length--;                       // we are decrementing the length by one
         if (length == 0) {
             head = null;
             tail = null;
