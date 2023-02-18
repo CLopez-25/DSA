@@ -4,7 +4,7 @@ package datastructures.linkedlist;
 
 public class LinkedList {
 
-//    first exercise of course completed below: class variables, node class, and constructor in Main.
+//    first exercise of course completed below: class variables, node class, and constructor.
     private Node head;
     private Node tail;
     private int length;

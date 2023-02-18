@@ -7,7 +7,7 @@ public class Main {
 
         // constructor exercise solution
         // this is creating a new linked list. variable myLinkedList is of type linked list which means it can point to a linked list.
-//        LinkedList myLinkedList = new LinkedList(4);  // creating our new linked list with a node with a value of 4 (value was from prev course section).
+//        LinkedList myLinkedList = new LinkedList(4);  // creating our new linked list with a node with a value of 4.
 
 //        myLinkedList.getHead();
 //        myLinkedList.getTail();
