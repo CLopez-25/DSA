@@ -10,19 +10,18 @@ public class LinkedList {
     private int length;
 
 
-        //    whenever a method needs to create a node it will call this class to create it
-    class Node {
+    class Node {                // whenever a method needs to create a node it will call this class to create it
         int value;
         Node next;
 
         Node(int value) {
-            this.value = value;
+            this.value = value;         // both values have been set to be equal ^^
         }
-//        both values have been set to be equal ^^
-    }
 
+    }
         //  ^^Nested class in case we want to put it in its own class file inside linkedList package from a permissions standpoint.^^
-//    two variables = value and next. value is an integer and next is of type node which means that this variable can point to a node. similar to pointers where we had a variable of type hash map.
+        // two variables = value and next. value is an integer and next is of type node which means that this variable can point to a node. similar to pointers where we had a variable of type hash map.
+
         public LinkedList(int value) {
             Node newNode = new Node(value);
             head = newNode;
