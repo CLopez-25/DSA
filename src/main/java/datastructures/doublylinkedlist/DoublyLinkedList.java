@@ -95,4 +95,12 @@ public class DoublyLinkedList {
     }
     // end of prepend method ///
 
+    // removeFirst method:
+    public Node removeFirst(){
+        if (length == 0) return null;
+        Node temp = head;
+        return temp;
+    }
+    // end of removeFirst ///
+
 }

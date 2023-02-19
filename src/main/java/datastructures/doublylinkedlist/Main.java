@@ -38,13 +38,20 @@ public class Main {
         // end of removeLast exercise ///
 
         // prepend exercise:
-        DoublyLinkedList myDLL = new DoublyLinkedList(2);
+//        DoublyLinkedList myDLL = new DoublyLinkedList(2);
+//        myDLL.append(3);
+//
+//        myDLL.prepend(1);
+//
+//        myDLL.printList();
+        // end of prepend exercise ///
+
+        // removeFirst exercise:
+        DoublyLinkedList myDLL = new DoublyLinkedList(1);
         myDLL.append(3);
 
-        myDLL.prepend(1);
-
         myDLL.printList();
-        // end of prepend exercise ///
+        // end of removeFirst exercise ///
 
     }
 
