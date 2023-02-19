@@ -65,11 +65,18 @@ public class DoublyLinkedList {
 
     // removeLast method:
     public Node removeLast(){
-        if (length == 0) return null;
+        if (length == 0) return null;   // when the doubly linked list has 0 items in it
         Node temp = tail;
-        if (length == 1){
-
+        if (length == 1){               // when the doubly linked list has 1 item in it
+            head = null;
+            tail = null;
+        } else {                        // when the doubly linked list has 2 or more items in it
+            tail = tail.prev;
+            tail.next = null;
+            temp.next = null;
         }
+        length--;                       // decrement the list by 1
+        return temp;                    // returning the Node
     }
     /// end of removeLast method ///
 
