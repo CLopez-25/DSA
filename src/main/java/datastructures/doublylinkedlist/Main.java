@@ -16,15 +16,25 @@ public class Main {
         // end of constructor exercise
 
         //append exercise:
-        DoublyLinkedList myDLL = new DoublyLinkedList(1);
-
-        myDLL.append(2);
-
-        myDLL.printList();
+//        DoublyLinkedList myDLL = new DoublyLinkedList(1);
+//
+//        myDLL.append(2);
+//
+//        myDLL.printList();
         // end of append exercise ///
 
         // removeLast exercise:
+        DoublyLinkedList myDLL = new DoublyLinkedList(1);
+        myDLL.append(2);
 
+        // (2) Items - Returns 2 Node
+        System.out.println(myDLL.removeLast().value);
+
+        // (1) Item - Return 1 Node
+        System.out.println(myDLL.removeLast().value);
+
+        // (0) Items - Return null
+        System.out.println(myDLL.removeLast());
         // end of removeLast exercise ///
 
     }
