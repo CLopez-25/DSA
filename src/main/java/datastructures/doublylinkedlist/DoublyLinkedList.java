@@ -1,8 +1,6 @@
 package datastructures.doublylinkedlist;
 
 
-import datastructures.linkedlist.LinkedList;
-
 public class DoublyLinkedList {
 
     private Node head;
