@@ -80,4 +80,14 @@ public class DoublyLinkedList {
     }
     /// end of removeLast method ///
 
+    //prepend method:
+    public void prepend(int value){
+        Node newNode = new Node(value);
+        if (length == 0) {
+            head = newNode;
+            tail = newNode;
+        }
+    }
+    // end of prepend method ///
+
 }
