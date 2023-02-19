@@ -64,7 +64,13 @@ public class DoublyLinkedList {
     // end of append method ///
 
     // removeLast method:
+    public Node removeLast(){
+        if (length == 0) return null;
+        Node temp = tail;
+        if (length == 1){
 
+        }
+    }
     /// end of removeLast method ///
 
 }

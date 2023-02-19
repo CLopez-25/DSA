@@ -77,7 +77,7 @@ public class LinkedList {
 
     // removeLast method:
     public Node removeLast(){            // returning null because it has a return type of Node
-        if (length == 0) return null;   // if the linked list is equal to 0 we return null; this linked list has a length of 1.
+        if (length == 0) return null;   // if the linked list is equal to 0 we return null; this linked list has a length of 0.
         Node temp = head;
         Node pre = head;
         while (temp.next != null) {     // while temp.next is not equal to null,
@@ -89,7 +89,7 @@ public class LinkedList {
         length--;                       // we are decrementing the length by one
         // below is our edge case for when we only have one node
         if (length == 0) {              // current line is same as beginning of the method but this is happening after we have decremented the length; this linked list has a length of 0.
-            head = null;                // if the linked list is starting at 0 then head and tail has to equal null
+            head = null;                // if the linked list is starting at 1 then head and tail has to equal null
             tail = null;
         }
         return temp;                    // all we have left to do is return that node
@@ -113,12 +113,12 @@ public class LinkedList {
 
     // remove first method:
     public Node removeFirst(){           // returning null because it has a return type of Node
-        if (length == 0) return null;   // the linked list started with one item in it
+        if (length == 0) return null;   // the linked list started with 0 items in it
         Node temp = head;
         head = head.next;
         temp.next = null;               // this will break the first node off the linked list
         length--;                       // the linked list will be decremented by 1.
-        if (length == 0){               // the linked list starts with 0 items in it. same situation as remove last method with their being two similar if statements.
+        if (length == 0){               // the linked list starts with 1 item in it. same situation as remove last method with their being two similar if statements.
             tail = null;
         }
         return temp;                    // temp is the pointer to the node that we just removed
