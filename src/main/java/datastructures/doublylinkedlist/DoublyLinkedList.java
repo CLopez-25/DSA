@@ -63,4 +63,8 @@ public class DoublyLinkedList {
     }
     // end of append method ///
 
+    // removeLast method:
+
+    /// end of removeLast method ///
+
 }

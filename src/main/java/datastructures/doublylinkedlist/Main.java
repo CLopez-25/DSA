@@ -18,8 +18,14 @@ public class Main {
         //append exercise:
         DoublyLinkedList myDLL = new DoublyLinkedList(1);
 
+        myDLL.append(2);
+
         myDLL.printList();
         // end of append exercise ///
+
+        // removeLast exercise:
+
+        // end of removeLast exercise ///
 
     }
 
