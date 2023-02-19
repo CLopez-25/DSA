@@ -16,7 +16,9 @@ public class Main {
         // end of constructor exercise
 
         //append exercise:
+        DoublyLinkedList myDLL = new DoublyLinkedList(1);
 
+        myDLL.printList();
         // end of append exercise ///
 
     }

@@ -49,7 +49,18 @@ public class DoublyLinkedList {
     // end of constructor exercise //
 
     // append method:
-
+    public void append(int value) {     // return type is void because we dont need to return anything to be able to append an item to the linked list.
+        Node newNode = new Node(value);
+        if ( length == 0){
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            newNode.prev = tail;
+            tail = newNode;
+        }
+        length++;
+    }
     // end of append method ///
 
 }
