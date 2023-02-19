@@ -47,10 +47,17 @@ public class Main {
         // end of prepend exercise ///
 
         // removeFirst exercise:
-        DoublyLinkedList myDLL = new DoublyLinkedList(1);
-        myDLL.append(3);
+        DoublyLinkedList myDLL = new DoublyLinkedList(2);
+        myDLL.append(1);
 
-        myDLL.printList();
+        //(2) Items - Returns 2 Node
+        System.out.println(myDLL.removeFirst().value);
+
+        // (1) Item - Return 1 Node
+        System.out.println(myDLL.removeFirst().value);
+
+        // (0) Items - Return null
+        System.out.println(myDLL.removeFirst());
         // end of removeFirst exercise ///
 
     }
