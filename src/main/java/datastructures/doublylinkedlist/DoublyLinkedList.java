@@ -3,6 +3,7 @@ package datastructures.doublylinkedlist;
 
 public class DoublyLinkedList {
 
+    // constructor exercise:
     private Node head;
     private Node tail;
     private int length;
@@ -45,4 +46,10 @@ public class DoublyLinkedList {
         System.out.println("Length: " + length);
     }
 //  ^^  DID NOT DO INT BECAUSE WE WANT TO ACTUALLY PRINT THE LENGTH OUT SO IT'S BEEN FORMATTED LIKE THE OTHER TWO GETTERS^^
+    // end of constructor exercise //
+
+    // append method:
+
+    // end of append method ///
+
 }
