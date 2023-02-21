@@ -72,6 +72,10 @@ public class Main {
         myDLL.printList();
         // end of get exercise ///
 
+        // set exercise:
+
+        // end of set exercise ///
+
     }
 
 }

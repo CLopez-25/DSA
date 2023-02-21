@@ -132,4 +132,8 @@ public class DoublyLinkedList {
     }
     // end of get method ///
 
+    // set method:
+
+    // end of set method ///
+
 }
