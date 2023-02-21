@@ -169,7 +169,18 @@ public class DoublyLinkedList {
     // end of insert method ///
 
     // remove method:
-
+    public Node remove(int index){
+        if (index < 0 || index >= length) return null;
+        if (index == 0) return removeFirst();       // removeFirst also has return type of Node so we can use it here
+        if (index == length - 1) return removeLast();   // removeLast also has return type of Node so we can use it here
+        Node temp = get(index);
+        temp.next.prev = temp.prev;
+        temp.prev.next = temp.next;
+        temp.next = null;
+        temp.prev = null;
+        length--;
+        return temp;
+    }
     // end of remove method ///
 
 }
