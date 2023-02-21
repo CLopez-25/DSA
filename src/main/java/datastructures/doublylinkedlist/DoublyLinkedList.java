@@ -52,8 +52,8 @@ public class DoublyLinkedList {
 
     // append method:
     public void append(int value) {     // return type is void because we don't need to return anything to be able to append an item to the linked list.
-        Node newNode = new Node(value);
-        if ( length == 0){
+        Node newNode = new Node(value);     // creates the new node
+        if ( length == 0){                  // making sure that the linked list is empty
             head = newNode;
             tail = newNode;
         } else {

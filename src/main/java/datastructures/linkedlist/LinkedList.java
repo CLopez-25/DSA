@@ -15,12 +15,13 @@ public class LinkedList {
         Node next;
 
         Node(int value) {
-            this.value = value;         // both values have been set to be equal ^^
+            this.value = value;   // both values have been set to be equal ^^
         }
 
     }
         //  ^^Nested class in case we want to put it in its own class file inside linkedList package from a permissions standpoint.^^
-        // two variables = value and next. value is an integer and next is of type node which means that this variable can point to a node. similar to pointers where we had a variable of type hash map.
+        // two variables = value and next. value is an integer and next is of type node which means that this variable can point to a node.
+        // similar to pointers where we had a variable of type hash map.
 
         public LinkedList(int value) {
             Node newNode = new Node(value);
@@ -170,8 +171,8 @@ public class LinkedList {
     // end of insert method ///
 
     // remove method:
-    public Node remove(int index){                  // first if statement is returning null because it has a return type of Node.
-        if (index < 0 || index >= length) return null;
+    public Node remove(int index){
+        if (index < 0 || index >= length) return null;  // first if statement is returning null because it has a return type of Node.
         if (index == 0) return removeFirst();       // removeFirst also has return type of Node so we can use it here
         if (index == length - 1) return removeLast();   // removeLast also has return type of Node so we can use it here
         Node prev = get(index - 1);
