@@ -92,8 +92,14 @@ public class Main {
 //        myDLL.printList();
         // end of insert exercise ///
 
-        // remove exercise:
+        // remove exercise;
+        DoublyLinkedList myDLL = new DoublyLinkedList(0);
+        myDLL.append(1);
+        myDLL.append(2);
 
+        myDLL.remove(1);
+
+        myDLL.printList();
         // end of remove exercise ///
 
     }
