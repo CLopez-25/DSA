@@ -84,13 +84,17 @@ public class Main {
         // end of set exercise ///
 
         // insert exercise:
-        DoublyLinkedList myDLL = new DoublyLinkedList(1);
-        myDLL.append(3);
-
-        myDLL.insert(1, 2);
-
-        myDLL.printList();
+//        DoublyLinkedList myDLL = new DoublyLinkedList(1);
+//        myDLL.append(3);
+//
+//        myDLL.insert(1, 2);
+//
+//        myDLL.printList();
         // end of insert exercise ///
+
+        // remove exercise:
+
+        // end of remove exercise ///
 
     }
 
