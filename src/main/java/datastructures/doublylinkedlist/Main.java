@@ -47,18 +47,30 @@ public class Main {
         // end of prepend exercise ///
 
         // removeFirst exercise:
-        DoublyLinkedList myDLL = new DoublyLinkedList(2);
-        myDLL.append(1);
-
-        //(2) Items - Returns 2 Node
-        System.out.println(myDLL.removeFirst().value);
-
-        // (1) Item - Return 1 Node
-        System.out.println(myDLL.removeFirst().value);
-
-        // (0) Items - Return null
-        System.out.println(myDLL.removeFirst());
+//        DoublyLinkedList myDLL = new DoublyLinkedList(2);
+//        myDLL.append(1);
+//
+//        //(2) Items - Returns 2 Node
+//        System.out.println(myDLL.removeFirst().value);
+//
+//        // (1) Item - Return 1 Node
+//        System.out.println(myDLL.removeFirst().value);
+//
+//        // (0) Items - Return null
+//        System.out.println(myDLL.removeFirst());
         // end of removeFirst exercise ///
+
+        // get exercise:
+        DoublyLinkedList myDLL = new DoublyLinkedList(0);
+        myDLL.append(1);
+        myDLL.append(2);
+        myDLL.append(3);
+
+        System.out.println(myDLL.get(1).value);
+        System.out.println(myDLL.get(2).value + "\n");
+
+        myDLL.printList();
+        // end of get exercise ///
 
     }
 
