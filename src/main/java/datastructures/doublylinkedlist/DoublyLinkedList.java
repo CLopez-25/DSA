@@ -53,15 +53,15 @@ public class DoublyLinkedList {
     // append method:
     public void append(int value) {     // return type is void because we don't need to return anything to be able to append an item to the linked list.
         Node newNode = new Node(value);     // creates the new node
-        if ( length == 0){                  // making sure that the linked list is empty
+        if ( length == 0){                  // if statement to making sure that the linked list is empty. could also say if (head = null).
             head = newNode;
             tail = newNode;
-        } else {
+        } else {                        // else statement for when there ARE items in the linked list.
             tail.next = newNode;
-            newNode.prev = tail;
+            newNode.prev = tail;        // we want the previous pointer to point to the same node that the tail is pointing to.
             tail = newNode;
         }
-        length++;
+        length++;                       // increasing the length by 1.
     }
     // end of append method ///
 

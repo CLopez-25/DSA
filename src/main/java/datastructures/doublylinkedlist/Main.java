@@ -16,11 +16,11 @@ public class Main {
         // end of constructor exercise
 
         //append exercise:
-//        DoublyLinkedList myDLL = new DoublyLinkedList(1);
+//        DoublyLinkedList myDLL = new DoublyLinkedList(1);         // created doubly linked list with the value of 1
 //
-//        myDLL.append(2);
+//        myDLL.append(2);                                          // appended a node with the value of 2
 //
-//        myDLL.printList();
+//        myDLL.printList();                                    // printed doubly linked list
         // end of append exercise ///
 
         // removeLast exercise:
