@@ -76,7 +76,7 @@ public class Main {
 //        myDLL.append(3);                                      // created doubly linked list with nodes with values of 0-3
 //
 //        System.out.println(myDLL.get(1).value);
-//        System.out.println(myDLL.get(2).value + "\n");      // printed the nodes with the values of 1 and 2
+//        System.out.println(myDLL.get(2).value + "\n");      // printed the nodes with the index of 1 and 2
 //
 //        myDLL.printList();                                  // printed out linked list
         // end of get exercise ///
@@ -98,11 +98,11 @@ public class Main {
 
         // insert exercise:
 //        DoublyLinkedList myDLL = new DoublyLinkedList(1);
-//        myDLL.append(3);
+//        myDLL.append(3);                                      // created doubly linked list with nodes with values of 1 and 3
 //
-//        myDLL.insert(1, 2);
+//        myDLL.insert(1, 2);                                   // inserted a node with the value of 2 at index 1
 //
-//        myDLL.printList();
+//        myDLL.printList();                                    // printed out linked list
         // end of insert exercise ///
 
 
@@ -110,11 +110,11 @@ public class Main {
         // remove exercise;
 //        DoublyLinkedList myDLL = new DoublyLinkedList(0);
 //        myDLL.append(1);
-//        myDLL.append(2);
+//        myDLL.append(2);                                      // created doubly linked list with nodes with values of 0-2
 //
-//        myDLL.remove(1);
+//        myDLL.remove(1);                                      // removed a node with the index of 1
 //
-//        myDLL.printList();
+//        myDLL.printList();                                    // printed out linked list
         // end of remove exercise ///
 
     }
