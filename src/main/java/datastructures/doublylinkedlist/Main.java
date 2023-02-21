@@ -37,34 +37,34 @@ public class Main {
 //        System.out.println(myDLL.removeLast().value);
 //
 //        // (0) Items - Return null
-//        System.out.println(myDLL.removeLast());        // did not add .value to this because we know it is supposed to return null. .value would give us an error
+//        System.out.println(myDLL.removeLast());      // did not add .value to this because we know it is supposed to return null. .value would give us an error
         // end of removeLast exercise ///
 
 
 
         // prepend exercise:
-//        DoublyLinkedList myDLL = new DoublyLinkedList(2);
-//        myDLL.append(3);
+//        DoublyLinkedList myDLL = new DoublyLinkedList(2);     // created doubly linked list with the value of 2
+//        myDLL.append(3);                                      // appended a node with the value of 3
 //
-//        myDLL.prepend(1);
+//        myDLL.prepend(1);                               // prepended a node with the value of 1 to the front of the doubly linked list.
 //
-//        myDLL.printList();
+//        myDLL.printList();                                      // printed doubly linked list
         // end of prepend exercise ///
 
 
 
         // removeFirst exercise:
-//        DoublyLinkedList myDLL = new DoublyLinkedList(2);
-//        myDLL.append(1);
+//        DoublyLinkedList myDLL = new DoublyLinkedList(2);    // created doubly linked list with the value of 2
+//        myDLL.append(1);                                      // appended a node with the value of 1
 //
 //        //(2) Items - Returns 2 Node
 //        System.out.println(myDLL.removeFirst().value);
-//
+//                                                                  // returning the values of nodes 1 and 2
 //        // (1) Item - Return 1 Node
 //        System.out.println(myDLL.removeFirst().value);
 //
 //        // (0) Items - Return null
-//        System.out.println(myDLL.removeFirst());
+//        System.out.println(myDLL.removeFirst());      // did not add .value to this because we know it is supposed to return null. .value would give us an error
         // end of removeFirst exercise ///
 
 
@@ -108,13 +108,13 @@ public class Main {
 
 
         // remove exercise;
-        DoublyLinkedList myDLL = new DoublyLinkedList(0);
-        myDLL.append(1);
-        myDLL.append(2);
-
-        myDLL.remove(1);
-
-        myDLL.printList();
+//        DoublyLinkedList myDLL = new DoublyLinkedList(0);
+//        myDLL.append(1);
+//        myDLL.append(2);
+//
+//        myDLL.remove(1);
+//
+//        myDLL.printList();
         // end of remove exercise ///
 
     }
