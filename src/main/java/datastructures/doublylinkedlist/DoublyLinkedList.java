@@ -145,4 +145,10 @@ public class DoublyLinkedList {
     }
     // end of set method ///
 
+    // insert method:
+    public boolean insert(int index, int value){
+
+    }
+    // end of insert method ///
+
 }

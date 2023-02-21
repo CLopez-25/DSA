@@ -83,6 +83,11 @@ public class Main {
         myDLL.printList();
         // end of set exercise ///
 
+        // insert exercise:
+        DoublyLinkedList myDLl = new DoublyLinkedList(0);
+
+        // end of insert exercise ///
+
     }
 
 }
