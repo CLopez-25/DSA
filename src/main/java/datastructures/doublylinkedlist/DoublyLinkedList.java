@@ -1,6 +1,8 @@
 package datastructures.doublylinkedlist;
 
 
+import datastructures.linkedlist.LinkedList;
+
 public class DoublyLinkedList {
 
     // constructor exercise:
@@ -133,7 +135,14 @@ public class DoublyLinkedList {
     // end of get method ///
 
     // set method:
-
+    public boolean set(int index, int value){   // the code is almost exactly the same in doubly linked list as a linked list,
+        Node temp = get(index);                 // but it differs in the get method since the get method runs differently in a doubly linked list.
+        if (temp != null) {
+            temp.value = value;
+            return true;
+        }
+        return false;
+    }
     // end of set method ///
 
 }
