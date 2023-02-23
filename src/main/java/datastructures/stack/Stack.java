@@ -20,14 +20,17 @@ public class Stack {                // stack class
         height = 1;
     }
 
-    public void printStack(){               // method to print out our stack in main
+    // method to print out our stack in main:
+    public void printStack(){
         Node temp = top;
         while(temp != null){
             System.out.println(temp.value);
             temp = temp.next;
         }
     }
+    // end of printStack method //
 
+    // getters for top and height:
     public void getTop(){
         System.out.println("Top: " + top.value);
     }
@@ -35,5 +38,10 @@ public class Stack {                // stack class
     public void getHeight(){
         System.out.println("Height: " + height);
     }
+    // end of getters ///
+
+    // push method:
+
+    // end of push method ///
 
 }
