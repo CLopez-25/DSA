@@ -25,11 +25,11 @@ public class Main {                             // main method
         Stack myStack = new Stack(7);
         myStack.push(23);
         myStack.push(3);
-        myStack.push(11);
+        myStack.push(11);               // created a new stack with nodes with the values of 7, 23, 3, 11
 
-        myStack.pop();
+        myStack.pop();                     // popping the last item in the stack (11)
 
-        myStack.printStack();
+        myStack.printStack();            // prints out the stack using the printStack method
         // end of pop section ///
 
     }

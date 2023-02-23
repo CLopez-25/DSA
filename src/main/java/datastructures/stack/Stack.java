@@ -55,12 +55,12 @@ public class Stack {                // stack class
 
     // pop method:
     public Node pop(){
-        if (height == 0) return null;
-        Node temp = top;
+        if (height == 0) return null;   // if statement for when the stack is empty
+        Node temp = top;                // the following for when there are items in the stack
         top = top.next;
         temp.next = null;
-        height--;
-        return temp;
+        height--;                       // decrementing the stack by 1
+        return temp;                    // returning the node
     }
     // end of pop method ///
 
