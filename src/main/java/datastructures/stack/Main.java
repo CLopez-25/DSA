@@ -22,9 +22,14 @@ public class Main {                             // main method
         // end of push section ///
 
         // pop section:
-        Stack myStack = new Stack(2);
+        Stack myStack = new Stack(7);
+        myStack.push(23);
+        myStack.push(3);
+        myStack.push(11);
 
+        myStack.pop();
 
+        myStack.printStack();
         // end of pop section ///
 
     }
