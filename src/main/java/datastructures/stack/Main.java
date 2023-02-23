@@ -11,15 +11,21 @@ public class Main {                             // main method
 //        myStack.getHeight();                    // getting the top and height values of the stack
 //
 //        myStack.printStack();                   // prints out the stack using the printStack method
-        // end of first section of stack
+        // end of first section of stack ///
 
         // push section:
-        Stack myStack = new Stack(2);     // created new stack with a node with the value of 2
-
-        myStack.push(1);                  // pushed a node with the value of 1 to the stack
-
-        myStack.printStack();                   // prints out the stack using the printStack method
+//        Stack myStack = new Stack(2);     // created new stack with a node with the value of 2
+//
+//        myStack.push(1);                  // pushed a node with the value of 1 to the stack
+//
+//        myStack.printStack();                   // prints out the stack using the printStack method
         // end of push section ///
+
+        // pop section:
+        Stack myStack = new Stack(2);
+
+
+        // end of pop section ///
 
     }
 

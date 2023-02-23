@@ -53,4 +53,10 @@ public class Stack {                // stack class
     }
     // end of push method ///
 
+    // pop method:
+    public Node pop(){
+
+    }
+    // end of pop method ///
+
 }
