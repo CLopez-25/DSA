@@ -41,7 +41,16 @@ public class Stack {                // stack class
     // end of getters ///
 
     // push method:
-
+    public void push(int value){
+        Node newNode = new Node(value);
+        if (height == 0){
+            top = newNode;
+        } else {
+            newNode.next = top;
+            top = newNode;
+        }
+        height++;
+    }
     // end of push method ///
 
 }
