@@ -14,4 +14,20 @@ public class Queue {
             this.value = value;
         }
     }
+
+    public Queue(int value){
+        Node newNode = new Node(value);
+        first = newNode;
+        last = newNode;
+        length = 1;
+    }
+
+    public void printQueue(){
+        Node temp = first;
+        while (temp != null){
+            System.out.println(temp.value);
+            temp = temp.next;
+        }
+    }
+
 }
