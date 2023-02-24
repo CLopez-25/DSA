@@ -4,14 +4,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Queue myQueue = new Queue(7);       // creating a queue
+//        Queue myQueue = new Queue(7);       // creating a queue
+//
+//        myQueue.getFirst();
+//        myQueue.getLast();
+//        myQueue.getLength();
+//
+//        myQueue.printQueue();
+        // end of first section in queue ///
 
-        myQueue.getFirst();
-        myQueue.getLast();
-        myQueue.getLength();
+        // enqueue section:
+        Queue myQueue = new Queue(1);
+
+        myQueue.enqueue(2);
 
         myQueue.printQueue();
-        // end of first section in queue ///
+        // end of enqueue section ///
 
     }
 
