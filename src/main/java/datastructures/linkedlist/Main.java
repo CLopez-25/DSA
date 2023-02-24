@@ -119,3 +119,7 @@ public class Main {
     }
 
 }
+
+// removing the last item from a linked list is O(n) because you have to start at the beginning of th list and iterate through to the end
+// removing the first item from a linked list is O(1) because you have to reindex every other item once the first item is removed.
+// finding an item by index in a linked list is O(n) because you have to iterate through the list until you get to the index you're looking for
