@@ -42,4 +42,19 @@ public class Queue {
         System.out.println("Length: " + length);
     }
     // end of first section, classes, queue method, constructor, getters, print method ///
+
+    // enqueue method:
+    public void enqueue(int value){
+        Node newNode = new Node(value);
+        if (length == 0){               // if queue is empty
+            first = newNode;
+            last = newNode;
+        } else {                        // if there's items in the queue
+            last.next = newNode;
+            last = newNode;
+        }
+        length++;
+    }
+    // end of enqueue ///
+
 }
