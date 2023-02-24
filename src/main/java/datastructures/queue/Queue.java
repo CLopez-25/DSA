@@ -57,4 +57,20 @@ public class Queue {
     }
     // end of enqueue ///
 
+    // dequeue method:
+    public Node dequeue(){      // node return type
+        if (length == 0) return null;     // empty queue
+        Node temp = first;
+        if (length == 1){               // 1 item in the queue
+            first = null;
+            last = null;
+        } else {                        // 2 or more items in the queue
+            first = first.next;
+            temp.next = null;
+        }
+        length--;                   // decrementing queue by 1
+        return temp;                // returning the node
+    }
+    // end of dequeue method ///
+
 }
