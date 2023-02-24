@@ -30,4 +30,16 @@ public class Queue {
         }
     }
 
+    public void getFirst(){
+        System.out.println("First: " + first.value);
+    }
+
+    public void getLast(){
+        System.out.println("Last: " + last.value);
+    }
+
+    public void getLength(){
+        System.out.println("Length: " + length);
+    }
+
 }
