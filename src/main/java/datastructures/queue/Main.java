@@ -14,15 +14,26 @@ public class Main {
         // end of first section in queue ///
 
         // enqueue section:
-        Queue myQueue = new Queue(1);
-
-        myQueue.enqueue(2);
-
-        myQueue.printQueue();
+//        Queue myQueue = new Queue(1);
+//
+//        myQueue.enqueue(2);
+//
+//        myQueue.printQueue();
         // end of enqueue section ///
 
         // dequeue section:
+        Queue myQueue = new Queue(2);
 
+        myQueue.enqueue(1);
+
+        // (2) Items - Returns 2 Nodes
+        System.out.println(myQueue.dequeue().value);
+
+        // (1) Item - Returns 1 Node
+        System.out.println(myQueue.dequeue().value);
+
+        // (0) Items - Returns null
+        System.out.println(myQueue.dequeue());
         // end of dequeue section
 
     }
