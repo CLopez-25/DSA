@@ -40,6 +40,6 @@ public class Main {
 
 }
 
-// pushing an item into a queue is O(1)
-// removing an item from a queue is O(1)
-// it is common to implement a Stack with an Array List
+// pushing an item into a queue is O(1)  pushing and popping from a Stack is O(1)
+// removing an item from a queue is O(1) adding and removing from a queue is O(1)
+// it is common to implement a Stack with an Array List or linked list
