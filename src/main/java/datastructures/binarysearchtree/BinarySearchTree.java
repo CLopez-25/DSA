@@ -41,4 +41,8 @@ public class BinarySearchTree {
     }
     // end of insert method ///
 
+    // contains method:
+
+    // end of contains method ///
+
 }
