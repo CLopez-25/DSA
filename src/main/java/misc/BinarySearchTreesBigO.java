@@ -17,6 +17,7 @@ public class BinarySearchTreesBigO {
     // create newNode
     // if less than go left,  else greater than go right
     // if null insert newNode else move to next
+
     // if there is an indication of a loop, figure out if it's a while loop or a for loop
     // if you know how many steps you're going to iterate through, it's a for loop.
     // if you don't then it's a while loop
@@ -28,6 +29,12 @@ public class BinarySearchTreesBigO {
 
     // you cant insert a value that is already in the binary search tree
 
-    //
+    // create newNode
+    // if root == null then root == newNode
+    // temp = root
+    // while loop
+    // if newNode == temp return false
+    // if less than go left,  else greater than go right
+    // if null insert newNode else move to next
 
 }
