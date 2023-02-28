@@ -12,6 +12,8 @@ public class BinarySearchTreesBigO {
     // but if you were looking up or removing by value, not by index, it would be O(n)
     // each node has to have a pointer pointing to it or its\'s going to get garbage collected
 
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+
     // notes for insert in binary search tree:
 
     // create newNode
@@ -36,5 +38,21 @@ public class BinarySearchTreesBigO {
     // if newNode == temp return false
     // if less than go left,  else greater than go right
     // if null insert newNode else move to next
+
+    ///////////////////////////////////////////////////////////////////////////////
+
+    // notes for contains:
+
+    // some things are the same as insert in bst
+
+    // if root == null return false
+    // temp = root
+    // while temp != null;
+    //  if < left
+    //  else if > right
+    // else return true
+    // if temp is equal to null it will break us out of the while loop and we can return false
+
+
 
 }
