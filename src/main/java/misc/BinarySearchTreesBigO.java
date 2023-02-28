@@ -50,7 +50,8 @@ public class BinarySearchTreesBigO {
     // while temp != null;
     //  if < left
     //  else if > right
-    // else return true
+    //  else == return true
+    // return false
     // if temp is equal to null it will break us out of the while loop and we can return false
 
 
