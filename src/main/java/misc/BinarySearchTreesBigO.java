@@ -12,4 +12,11 @@ public class BinarySearchTreesBigO {
     // but if you were looking up or removing by value, not by index, it would be O(n)
     // each node has to have a pointer pointing to it or its\'s going to get garbage collected
 
+    // notes for insert in binary search tree:
+
+    // create newNode
+    // if less than go left,  else greater than go right
+    // if null insert newNode else move to next
+    //
+
 }
