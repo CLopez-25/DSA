@@ -14,4 +14,12 @@ public class BinarySearchTree {
         }
     }
 
+    public boolean insert(int value){
+        Node newNode = new Node(value);
+        if (root == null) {
+            root = newNode;
+            return true;
+        }
+        Node temp = root;
+    }
 }
