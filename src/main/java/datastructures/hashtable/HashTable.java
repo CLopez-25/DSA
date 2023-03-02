@@ -1,6 +1,8 @@
 package datastructures.hashtable;
 
 public class HashTable {
+
+    // buiding out hashtable method and constructor:
     private int size = 7;
     private Node[] dataMap;
 
@@ -29,6 +31,7 @@ public class HashTable {
         }
     }
 
+    // hash method:
     private int hash(String key){
         int hash = 0;
         char[] keyChars = key.toCharArray();
@@ -38,5 +41,10 @@ public class HashTable {
         }
         return hash;
     }
+    // end of hash method
+
+    // set method:
+
+    // end of set method
 
 }
