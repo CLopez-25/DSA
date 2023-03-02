@@ -44,7 +44,19 @@ public class HashTable {
     // end of hash method
 
     // set method:
-
+    public void set(String key, int value){
+        int index = hash(key);
+        Node newNode = new Node(key, value);
+        if (dataMap[index] == null){            // like when we would set temp = to head
+            dataMap[index] = newNode;
+        } else {
+            Node temp = dataMap[index];
+            while (temp.next != null){
+                temp = temp.next;
+            }
+            temp.next = newNode;
+        }
+    }
     // end of set method
 
 }
