@@ -42,7 +42,7 @@ public class BinarySearchTree {
     // end of insert method ///
 
     // contains method:
-    public boolean contains(int value){
+    public boolean contains(int value){         // see notes for explanation on how this method works
         Node temp = root;
         while (temp != null){
             if (value < temp.value){
