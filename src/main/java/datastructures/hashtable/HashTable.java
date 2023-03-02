@@ -27,6 +27,7 @@ public class HashTable {
             Node temp = dataMap[i];
             while (temp != null) {
                 System.out.println("   {" + temp.key + "= " + temp.value + "}");
+                temp = temp.next;
             }
         }
     }
