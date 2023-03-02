@@ -10,22 +10,34 @@ public class Main {
         // end of first section
 
         // insert section:
+//        BinarySearchTree myBST = new BinarySearchTree();
+//
+//        myBST.insert(47);
+//        myBST.insert(21);
+//        myBST.insert(76);
+//        myBST.insert(18);
+//        myBST.insert(52);
+//        myBST.insert(82);
+//
+//        myBST.insert(27);
+//
+//        System.out.println(myBST.root.left.right.value);
+        // end of insert section ///
+
+        // contains section:
         BinarySearchTree myBST = new BinarySearchTree();
 
         myBST.insert(47);
         myBST.insert(21);
         myBST.insert(76);
         myBST.insert(18);
+        myBST.insert(27);
         myBST.insert(52);
         myBST.insert(82);
 
-        myBST.insert(27);
+        System.out.println(myBST.contains(27));
 
-        System.out.println(myBST.root.left.right.value);
-        // end of insert section ///
-
-        // contains section:
-
+        System.out.println(myBST.contains(17));
         // end of contains section ///
     }
 }
