@@ -12,6 +12,7 @@ public class Graph {
         System.out.println(adjList);
     }
 
+    // Add vertex method:
     public boolean addVertex(String vertex){
         if(adjList.get(vertex) == null) {
             adjList.put(vertex, new ArrayList<String>());
@@ -19,5 +20,12 @@ public class Graph {
         }
         return false;
     }
+    // end of add vertex method
+
+    // add edge method:
+    public boolean addEdge(String vertex1, String vertex2){
+
+    }
+    // end of add edge method
 
 }
