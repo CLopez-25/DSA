@@ -2,6 +2,8 @@ package misc;
 
 public class GraphBigO {
 
+    //Graphs are the go-to data structure when you need to represent entities and the relationships between them.
+
     // for space complexity, the ADJACENCY MATRIX is O of the number of vertices squared. O(|V|^2)
     // ADJACENCY LIST is O of the number of vertices plus the number of edges. O(|V|+|E|)
     // so from a space complexity, the adjacency list is better.
