@@ -22,20 +22,39 @@ public class Main {
         // end of Add edge
 
         // remove edge:
+//        Graph myGraph = new Graph();
+//
+//        myGraph.addVertex("A");
+//        myGraph.addVertex("B");
+//        myGraph.addVertex("C");
+//
+//        myGraph.addEdge("A", "B");
+//        myGraph.addEdge("A", "C");
+//        myGraph.addEdge("B", "C");
+//
+//        myGraph.removeEdge("A", "B");
+//
+//        myGraph.printGraph();
+        // end of remove edge
+
+        // remove vertex:
         Graph myGraph = new Graph();
 
         myGraph.addVertex("A");
         myGraph.addVertex("B");
         myGraph.addVertex("C");
+        myGraph.addVertex("D");
 
         myGraph.addEdge("A", "B");
         myGraph.addEdge("A", "C");
-        myGraph.addEdge("B", "C");
+        myGraph.addEdge("A", "D");
+        myGraph.addEdge("B", "D");
+        myGraph.addEdge("C", "D");
 
-        myGraph.removeEdge("A", "B");
+        myGraph.removeVertex("D");
 
         myGraph.printGraph();
-        // end of remove edge
+        // end of remove vertex
 
     }
 }
