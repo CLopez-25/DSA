@@ -13,6 +13,7 @@ public class Main {
 //        }
 //        return false;                           // this block of code(6-13) is inefficient because it has nested for loops!!
 //    }                                           // O(n^2)
+    // end of first example
 
     // item in common(example 2):
     public static  boolean itemInCommon(int[] array1, int[] array2){
@@ -26,7 +27,9 @@ public class Main {
         }
         return false;
     }
+    // end of second example
 
+    // main constructor:
     public static void main(String[] args) {
         int[] array1 = {1, 3, 5};
         int[] array2 = {2, 4, 5};
