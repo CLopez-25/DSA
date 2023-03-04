@@ -9,17 +9,28 @@ public class Main {
 //        myHashTable.printTable();
 
         // Set section:
+//        HashTable myHashTable = new HashTable();
+//
+//        myHashTable.set("nails", 100);
+//        myHashTable.set("tile", 50);
+//        myHashTable.set("lumber", 80);
+//
+//        myHashTable.set("bolts", 200);
+//        myHashTable.set("screws", 140);
+//
+//        myHashTable.printTable();
+        // end of set section
+
+        // get section:
         HashTable myHashTable = new HashTable();
 
         myHashTable.set("nails", 100);
         myHashTable.set("tile", 50);
         myHashTable.set("lumber", 80);
 
-        myHashTable.set("bolts", 200);
-        myHashTable.set("screws", 140);
-
-        myHashTable.printTable();
-        // end of set section
+        System.out.println(myHashTable.get("lumber"));
+        System.out.println(myHashTable.get("bolts"));
+        // end of get section
 
     }
 }
