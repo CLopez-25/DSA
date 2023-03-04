@@ -24,23 +24,23 @@ public class Graph {
 
     // add edge method:
     public boolean addEdge(String vertex1, String vertex2){
-        if (adjList.get(vertex1) != null && adjList.get(vertex2) != null) {
-            adjList.get(vertex1).add(vertex2);
-            adjList.get(vertex2).add(vertex1);
-            return true;
+        if (adjList.get(vertex1) != null && adjList.get(vertex2) != null) {       // if both vertices exist
+            adjList.get(vertex1).add(vertex2);                                   // add the edge between the two vertices
+            adjList.get(vertex2).add(vertex1);                                   // add the edge between the two vertices
+            return true;                                                         // return true if the edge was added
         }
-        return false;
+        return false;                                                           // return false if the edge was not added
     }
     // end of add edge method
 
     // remove edge method:
     public boolean removeEdge(String vertex1, String vertex2){
-        if (adjList.get(vertex1) != null && adjList.get(vertex2) != null) {
-            adjList.get(vertex1).remove(vertex2);
-            adjList.get(vertex2).remove(vertex1);
-            return true;
+        if (adjList.get(vertex1) != null && adjList.get(vertex2) != null) {         // if both vertices exist
+            adjList.get(vertex1).remove(vertex2);                                   // remove the edge between the two vertices
+            adjList.get(vertex2).remove(vertex1);                                   // remove the edge between the two vertices
+            return true;                                                            // return true if the edge was removed
         }
-        return false;
+        return false;                                                           // return false if the edge was not removed
     }
     // end of remove edge method
 
