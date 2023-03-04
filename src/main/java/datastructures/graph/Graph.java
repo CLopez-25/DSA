@@ -33,4 +33,15 @@ public class Graph {
     }
     // end of add edge method
 
+    // remove edge method:
+    public boolean removeEdge(String vertex1, String vertex2){
+        if (adjList.get(vertex1) != null && adjList.get(vertex2) != null) {
+            adjList.get(vertex1).remove(vertex2);
+            adjList.get(vertex2).remove(vertex1);
+            return true;
+        }
+        return false;
+    }
+    // end of remove edge method
+
 }

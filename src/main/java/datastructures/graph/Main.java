@@ -11,15 +11,20 @@ public class Main {
         // end of addvertex
 
         // Add Edge
+//        Graph myGraph = new Graph();
+//
+//        myGraph.addVertex("A");
+//        myGraph.addVertex("B");
+//
+//        myGraph.addEdge("A", "B");
+//
+//        myGraph.printGraph();
+        // end of Add edge
+
+        // remove edge:
         Graph myGraph = new Graph();
 
-        myGraph.addVertex("A");
-        myGraph.addVertex("B");
-
-        myGraph.addEdge("A", "B");
-
-        myGraph.printGraph();
-        // end of Add edge
+        // end of remove edge
 
     }
 }
