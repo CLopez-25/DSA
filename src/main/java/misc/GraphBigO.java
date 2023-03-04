@@ -12,5 +12,20 @@ public class GraphBigO {
 
     // FROM A BIG O perspective, ADJACENCY MATRIX is O(|V|^2) every time you add a vertex,
     // whereas with an ADJACENCY LIST it's O(1) to ADD a vertex!
+    //
+//    {
+//        "A"=["B", "E"],
+//        "B"=["A", "C", "F"],
+//        "C"=["B", "D"],
+//        "D"=["C", "E"],
+//        "E"=["A", "D"],
+//        "F"=["B"]
+//    }
+    // IN THIS EXAMPLE WE'RE ADDING AND EDGE BETWEEN B AND THE NEW VERTEX F. (ADJACENCY LIST)
+    // in adjacency matrix we changed the 0 to a 1 on the row and column of F and B.
+    // both cases are now O(1)
+
+    // with adjacency list in order to remove the F edge we have to iterate through each array list and find where F is and then remove it,
+    // then go to F array list and do the same thing
 
 }
