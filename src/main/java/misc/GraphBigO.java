@@ -25,7 +25,12 @@ public class GraphBigO {
     // in adjacency matrix we changed the 0 to a 1 on the row and column of F and B.
     // both cases are now O(1)
 
-    // with adjacency list in order to remove the F edge we have to iterate through each array list and find where F is and then remove it,
+    // REMOVE:
+    // with ADJACENCY LIST in order to remove the F edge we have to iterate through each array list and find where F is and then remove it,
     // then go to F array list and do the same thing
+    // with an ADJACENCY MATRIX in order to remove that same edge you just change the 1 to a 0 in the F and B columns and it is removed.
+    // in this situation the adjacency matrix outperforms the adjacency list,
+    // ADJACENCY MATRIX is O(1) and the ADJACENCY LIST is O(|E|).
+
 
 }
