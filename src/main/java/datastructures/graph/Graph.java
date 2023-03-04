@@ -44,4 +44,15 @@ public class Graph {
     }
     // end of remove edge method
 
+    // remove vertex method:
+    public boolean removeVertex(String vertex){
+        if (adjList.get(vertex) == null) return false;                            // if the vertex does not exist, return false
+        for (String otherVortex : adjList.get(vertex)) {                          // for each vertex in the adjacency list
+            adjList.get(otherVortex).remove(vertex);                              // remove the vertex from the adjacency list
+        }
+        adjList.remove(vertex);                                                   // remove the vertex from the adjacency list
+        return true;                                                              // return true if the vertex was removed
+    }
+    // end of remove vertex method
+
 }

@@ -32,5 +32,7 @@ public class GraphBigO {
     // in this situation the adjacency matrix outperforms the adjacency list,
     // ADJACENCY MATRIX is O(1) and the ADJACENCY LIST is O(|E|).
 
+    // if we're going to remove a vertex, we have to remove all the edges that are connected to that vertex.
+
 
 }
