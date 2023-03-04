@@ -1,5 +1,7 @@
 package datastructures.hashtable;
 
+import java.util.ArrayList;
+
 public class HashTable {
 
     // buiding out hashtable method and constructor:
@@ -71,5 +73,19 @@ public class HashTable {
         return 0;                                             //once temp is equal to null it will break out of the while loop and return 0
     }
     // end of get method
+
+    // keys array list:
+    public ArrayList keys() {
+        ArrayList<String> allKeys = new ArrayList<>();
+        for (int i = 0; i < dataMap.length; i++) {
+            Node temp = dataMap[i];
+            while (temp != null) {
+                allKeys.add(temp.key);
+                temp = temp.next;
+            }
+        }
+        return allKeys;
+    }
+    // end of keys array list
 
 }
