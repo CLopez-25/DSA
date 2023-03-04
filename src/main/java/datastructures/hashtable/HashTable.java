@@ -60,4 +60,16 @@ public class HashTable {
     }
     // end of set method
 
+    //get method:
+    public int get(String key){
+        int index = hash(key);
+        Node temp = dataMap[index];                             // if we have a linked list at that index, the while loop will run,
+        while (temp != null){
+            if (temp.key == key) return temp.value;
+            temp = temp.next;
+        }
+        return 0;
+    }
+    // end of get method
+
 }
