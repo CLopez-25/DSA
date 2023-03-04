@@ -13,4 +13,7 @@ public class HashTables {
 
     // in the course we'll be dealing with collisions using separate chaining we'll have all the key values in one address,
     // and the way that'll be done is by having a linked list at each one of the addresses.
+
+    // when dealing with a hash table you might think you're dealing with O(n) but it'll probably be O(1)
+    // getting an item and setting an item in a hash table is O(1)
 }
