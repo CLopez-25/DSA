@@ -1,6 +1,6 @@
 package misc;
 
-public class HashTables {
+public class HashTablesBigO {
 
     // hash tables are one way only
     // they are deterministic
