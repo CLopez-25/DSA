@@ -110,4 +110,13 @@ public class BinarySearchTree {
     }
     // end of deleteNode method ///
 
+    //minValue method:
+    public int minValue(Node currentNode){
+        while (currentNode.left != null){
+            currentNode = currentNode.left;
+        }
+        return currentNode.value;
+    }
+    //end of minValue method ///
+
 }
