@@ -93,4 +93,19 @@ public class BinarySearchTree {
     }
     // end of rInsert method ///
 
+    // deleteNode method:
+    private Node deleteNode(Node currentNode, int value){
+        if (currentNode == null) return null;
+
+        if (value < currentNode.value) {
+            currentNode.left = deleteNode(currentNode.left, value);
+        } else if (value > currentNode.value) {
+            currentNode.right = deleteNode(currentNode.right, value);
+        } else {
+
+        }
+        return currentNode;
+    }
+    // end of deleteNode method ///
+
 }
