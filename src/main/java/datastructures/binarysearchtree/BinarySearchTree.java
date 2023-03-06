@@ -57,4 +57,12 @@ public class BinarySearchTree {
     }
     // end of contains method ///
 
+    // rcontains method:
+    private boolean rContains(Node currentNode, int value){
+        if (currentNode == null) return false;
+
+        if (currentNode.value == value) return true;
+    }
+    // end of rcontains method ///
+
 }
