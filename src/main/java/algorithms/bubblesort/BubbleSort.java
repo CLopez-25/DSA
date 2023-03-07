@@ -26,3 +26,5 @@ public class BubbleSort {
     }
 
 }
+
+// space complexity of bubblesort is O(1) because we are not creating any new data structures
