@@ -95,15 +95,23 @@ public class BinarySearchTree {
 
     // deleteNode method:
     private Node deleteNode(Node currentNode, int value){
+        if (currentNode == null) return null;                               // if the value we're looking for is not in the tree, we're going to return null.
+
         if (value < currentNode.value) {
             currentNode.left = deleteNode(currentNode.left, value);
-        } else {
+        } else if (value > currentNode.value) {
+            currentNode.right = deleteNode(currentNode.right, value);         // this section is going to traverse left and right and either determine that the value we're looking for is in the tree or not.
+        } else {                                                              // if this else statement is triggered, there could be four possibilities:
             if (currentNode.left == null && currentNode.right == null) {
-                return null;
+                currentNode = null;                                             // 1. the node we're looking at is a leaf node, so we can just set it to null.
             } else if (currentNode.left == null) {
-                currentNode = currentNode.right;
+                currentNode = currentNode.right;                               // 2. it could be a node that is open on the left and has a node on the right.
             } else if (currentNode.right == null) {
-                currentNode = currentNode.left;
+                currentNode = currentNode.left;                                // 3. it could be a node that is open on the right and has a node on the left.
+            } else {
+                int subTreeMin = minValue(currentNode.right);
+                currentNode.value = subTreeMin;
+                currentNode.right = deleteNode(currentNode.right, subTreeMin);  // 4. or it could have a node on the left AND on the right.
             }
         }
         return currentNode;
