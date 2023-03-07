@@ -116,6 +116,10 @@ public class BinarySearchTree {
         }
         return currentNode;
     }
+
+    public void deleteNode(int value){
+        deleteNode(root, value);
+    }                                       // this is the overloaded method that is public and will be called from the main method.
     // end of deleteNode method ///
 
     //minValue method:
