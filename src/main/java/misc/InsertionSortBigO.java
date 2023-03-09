@@ -3,6 +3,9 @@ package misc;
 public class InsertionSortBigO {
 
     /*
+
+  Big O insertion sort notes:
+
      Since insertion sort has a for loop inside of a for loop, it is O(n^2) | O of n squared |
      in it's worst case.
 
@@ -13,7 +16,8 @@ public class InsertionSortBigO {
      are more complex to write, but they are faster.
 
      except when you have almost sorted data, you can use an insertion algorithm that is more
-     primitive because it is
+     primitive because it is O(n^2) typically and it will actually run faster.
 
      */
+
 }
