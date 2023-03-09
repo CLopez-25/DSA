@@ -61,7 +61,7 @@ public class BigO {
 
 // O(log n) is the second most efficient Big O.
 
-// some sorting algorithms use O(n log n) with quick sort and merge sort.
+// some sorting algorithms use O(n * log n) with quick sort and merge sort.
 
 //          O(1)
 // -adding/removing at the end of an array/array list (one operation for both)
