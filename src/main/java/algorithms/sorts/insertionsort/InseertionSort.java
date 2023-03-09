@@ -1,5 +1,7 @@
 package algorithms.sorts.insertionsort;
 
+import java.util.Arrays;
+
 public class InseertionSort {
 
     public static void insertionSort(int[] array){
@@ -12,6 +14,15 @@ public class InseertionSort {
                 j--;
             }
         }
+    }
+
+    public static void main(String[] args) {
+        int[] myArray = {4,2,6,5,1,3};
+
+        insertionSort(myArray);
+
+        System.out.println(Arrays.toString(myArray));
+
     }
 
 }
