@@ -1,6 +1,6 @@
 package misc;
 
-public class MergeSortNotes {
+public class MergeSortBigO {
 
 /*
 
