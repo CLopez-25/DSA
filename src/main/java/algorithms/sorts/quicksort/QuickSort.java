@@ -1,5 +1,7 @@
 package algorithms.sorts.quicksort;
 
+import java.util.Arrays;
+
 public class QuickSort {
 
     private static void swap(int[] array, int firstIndex, int secondIndex) {
@@ -19,6 +21,16 @@ public class QuickSort {
         swap(array, pivotIndex, swapIndex);
 
         return swapIndex;
+    }
+
+    public static void main(String[] args) {
+        int[] myArray = {4,6,1,7,3,2,5};
+
+        int returnedIndex = pivot(myArray, 0, 6);
+
+        System.out.println("Returned Index: " + returnedIndex);
+
+        System.out.println(Arrays.toString(myArray));
     }
 
 }
