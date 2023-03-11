@@ -40,4 +40,14 @@ public class MergeSort {
         System.out.println(Arrays.toString(merge(array1, array2)));
     }
 
+    public static int[] mergeSort(int[] array) {
+        if (array.length == 1) return array;
+
+        int midindex = array.length/2;
+        int[] left = mergeSort(Arrays.copyOfRange(array, 0, midindex));
+        int[] right = mergeSort(Arrays.copyOfRange(array, midindex, array.length));
+
+        return merge(left,right);
+    }
+
 }
