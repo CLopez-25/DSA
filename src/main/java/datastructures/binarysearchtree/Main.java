@@ -152,6 +152,18 @@ public class Main {
 //
 //        System.out.println(myBST.DFSPreOrder());
 
+//        BinarySearchTree myBST = new BinarySearchTree();
+//
+//        myBST.insert(47);
+//        myBST.insert(21);
+//        myBST.insert(76);
+//        myBST.insert(18);
+//        myBST.insert(27);
+//        myBST.insert(52);
+//        myBST.insert(82);
+//
+//        System.out.println(myBST.DFSPostOrder());
+
         BinarySearchTree myBST = new BinarySearchTree();
 
         myBST.insert(47);
@@ -162,7 +174,7 @@ public class Main {
         myBST.insert(52);
         myBST.insert(82);
 
-        System.out.println(myBST.DFSPreOrder());
+        System.out.println(myBST.DFSPostOrder());
 
     }
 }
