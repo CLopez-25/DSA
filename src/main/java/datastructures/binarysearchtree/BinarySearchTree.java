@@ -137,6 +137,7 @@ public class BinarySearchTree {
 
     // breadth first search methods:
 
+    // BFS method:
     public ArrayList<Integer> BFS() {
         Node currentNode = root;
         Queue<Node> queue = new LinkedList<>();
@@ -155,7 +156,10 @@ public class BinarySearchTree {
         }
         return results;
     }
+    // end of BFS method ///
 
+    // DFS methods:
+    // DFSPreOrder method:
     public ArrayList<Integer> DFSPreOrder() {
         ArrayList<Integer> results = new ArrayList<>();
 
@@ -173,5 +177,26 @@ public class BinarySearchTree {
         new Traverse(root);
         return results;
     }
+    // end of DFSPreOrder method ///
+
+    //DFSPostOrder method:
+    public ArrayList<Integer> DFSPostOrder() {
+        ArrayList<Integer> results = new ArrayList<>();
+
+        class Traverse {
+            Traverse(Node currentNode) {
+                if (currentNode.left != null) {
+                    new Traverse(currentNode.left);
+                }
+                if (currentNode.right != null) {
+                    new Traverse(currentNode.right);
+                }
+                results.add(currentNode.value);
+            }
+        }
+        new Traverse(root);
+        return results;
+    }
+    // end of DFSPostOrder method ///
 
 }
