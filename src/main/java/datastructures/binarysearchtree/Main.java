@@ -128,6 +128,18 @@ public class Main {
 //        System.out.println("Root-Right: " + myBST.root.right);
         // end of deleteNode section ///
 
+//        BinarySearchTree myBST = new BinarySearchTree();
+//
+//        myBST.insert(47);
+//        myBST.insert(21);
+//        myBST.insert(76);
+//        myBST.insert(18);
+//        myBST.insert(27);
+//        myBST.insert(52);
+//        myBST.insert(82);
+//
+//        System.out.println(myBST.BFS());
+
         BinarySearchTree myBST = new BinarySearchTree();
 
         myBST.insert(47);
@@ -138,7 +150,7 @@ public class Main {
         myBST.insert(52);
         myBST.insert(82);
 
-        System.out.println(myBST.BFS());
+        System.out.println(myBST.DFSPreOrder());
 
     }
 }
