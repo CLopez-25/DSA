@@ -23,12 +23,12 @@ public class LinkedList {
         // two variables = value and next. value is an integer and next is of type node which means that this variable can point to a node.
         // similar to pointers where we had a variable of type hash map.
 
-        public LinkedList(int value) {
+    public LinkedList(int value) {
             Node newNode = new Node(value);
             head = newNode;
             tail = newNode;
             length = 1;
-        }
+    }
     //      End of exercise  /////
 
 

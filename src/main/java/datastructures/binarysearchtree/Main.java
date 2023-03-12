@@ -99,33 +99,46 @@ public class Main {
             */
 
         // deleteNode section:
+//        BinarySearchTree myBST = new BinarySearchTree();
+//
+//        myBST.insert(2);
+//        myBST.insert(1);
+//        myBST.insert(3);
+//
+//        /* lines above, create this tree:
+//                  2
+//                /   \
+//               1     3
+//        */
+//
+//        System.out.println("\nRoot: " + myBST.root.value);
+//        System.out.println("Root->Left: " + myBST.root.left.value);
+//        System.out.println("Root->Right: " + myBST.root.right.value);
+//
+//        myBST.deleteNode(2);
+//
+//        /*
+//                3
+//               / \
+//             1   null
+//        */
+//
+//        System.out.println("\nRoot: " + myBST.root.value);
+//        System.out.println("Root-Left: " + myBST.root.left.value);
+//        System.out.println("Root-Right: " + myBST.root.right);
+        // end of deleteNode section ///
+
         BinarySearchTree myBST = new BinarySearchTree();
 
-        myBST.insert(2);
-        myBST.insert(1);
-        myBST.insert(3);
+        myBST.insert(47);
+        myBST.insert(21);
+        myBST.insert(76);
+        myBST.insert(18);
+        myBST.insert(27);
+        myBST.insert(52);
+        myBST.insert(82);
 
-        /* lines above, create this tree:
-                  2
-                /   \
-               1     3
-        */
+        System.out.println(myBST.BFS());
 
-        System.out.println("\nRoot: " + myBST.root.value);
-        System.out.println("Root->Left: " + myBST.root.left.value);
-        System.out.println("Root->Right: " + myBST.root.right.value);
-
-        myBST.deleteNode(2);
-
-        /*
-                3
-               / \
-             1   null
-        */
-
-        System.out.println("\nRoot: " + myBST.root.value);
-        System.out.println("Root-Left: " + myBST.root.left.value);
-        System.out.println("Root-Right: " + myBST.root.right);
-        // end of deleteNode section ///
     }
 }
