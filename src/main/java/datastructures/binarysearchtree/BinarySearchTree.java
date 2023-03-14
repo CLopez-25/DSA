@@ -161,21 +161,22 @@ public class BinarySearchTree {
     // DFS methods:
     // DFSPreOrder method:
     public ArrayList<Integer> DFSPreOrder() {
-        ArrayList<Integer> results = new ArrayList<>();
+        ArrayList<Integer> results = new ArrayList<>();   // this method is going to return an ArrayList of integers.
+                                                            // it will start at the root node and then traverse the tree depth first.
 
         class Traverse {
-            Traverse(Node currentNode) {
+            Traverse(Node currentNode) {             // it will use a recursive helper method to traverse the tree.
                 results.add(currentNode.value);
-                if (currentNode.left != null) {
+                if (currentNode.left != null) {       // it will add the values of the nodes to the results ArrayList and then return the results ArrayList.
                     new Traverse(currentNode.left);
                 }
-                if (currentNode.right != null) {
+                if (currentNode.right != null) {      // it will first add the value of the current node to the results ArrayList.
                     new Traverse(currentNode.right);
                 }
             }
         }
-        new Traverse(root);
-        return results;
+        new Traverse(root);                           // it will then check to see if the node has a left child and if it does, it will call the recursive helper method on the left child.
+        return results;                              // it will then check to see if the node has a right child and if it does, it will call the recursive helper method on the right child.
     }
     // end of DFSPreOrder method ///
 
