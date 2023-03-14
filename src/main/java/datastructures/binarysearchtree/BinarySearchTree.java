@@ -128,33 +128,33 @@ public class BinarySearchTree {
 
     //minValue method:
     public int minValue(Node currentNode){
-        while (currentNode.left != null){
+        while (currentNode.left != null){     // this method is going to traverse the tree and find the smallest value in the tree.
             currentNode = currentNode.left;
         }
-        return currentNode.value;
+        return currentNode.value;             // it will return the smallest value in the tree.
     }
     //end of minValue method ///
 
     // breadth first search methods:
 
     // BFS method:
-    public ArrayList<Integer> BFS() {
-        Node currentNode = root;
-        Queue<Node> queue = new LinkedList<>();
-        ArrayList<Integer> results = new ArrayList<>();
-        queue.add(currentNode);
+    public ArrayList<Integer> BFS() {                        // this method is going to return an ArrayList of integers.
+        Node currentNode = root;                            // it will start at the root node and then traverse the tree level by level.
+        Queue<Node> queue = new LinkedList<>();              // it will use a queue to keep track of the nodes that it has visited.
+        ArrayList<Integer> results = new ArrayList<>();     // it will add the values of the nodes to the results ArrayList and then return the results ArrayList.
+        queue.add(currentNode);                              // it will add the root node to the queue.
 
-        while(queue.size() > 0) {
+        while(queue.size() > 0) {                          // while the queue is not empty, it will remove the first node from the queue and add it to the results ArrayList.
             currentNode = queue.remove();
             results.add(currentNode.value);
-            if (currentNode.left != null) {
+            if (currentNode.left != null) {                // it will then check to see if the node has a left child and if it does, it will add it to the queue.
                 queue.add(currentNode.left);
             }
-            if (currentNode.right != null) {
+            if (currentNode.right != null) {               // it will then check to see if the node has a right child and if it does, it will add it to the queue.
                 queue.add(currentNode.right);
             }
         }
-        return results;
+        return results;                                   // it will then return the results ArrayList.
     }
     // end of BFS method ///
 
