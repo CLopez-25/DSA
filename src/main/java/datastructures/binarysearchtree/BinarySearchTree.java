@@ -201,22 +201,22 @@ public class BinarySearchTree {
     // end of DFSPostOrder method ///
 
     // DFSInOrder method:
-    public ArrayList<Integer> DFSInOrder() {
+    public ArrayList<Integer> DFSInOrder() {                // this method is going to return an ArrayList of integers.
         ArrayList<Integer> results = new ArrayList<>();
 
-        class Traverse {
+        class Traverse {                                  // it will start at the root node and then traverse the tree depth first.
             Traverse(Node currentNode) {
-                if (currentNode.left != null) {
-                    new Traverse(currentNode.left);
+                if (currentNode.left != null) {           // it will use a recursive helper method to traverse the tree.
+                    new Traverse(currentNode.left);       // it will first check to see if the node has a left child and if it does, it will call the recursive helper method on the left child.
                 }
-                results.add(currentNode.value);
-                if (currentNode.right != null) {
+                results.add(currentNode.value);          // it will then add the value of the current node to the results ArrayList.
+                if (currentNode.right != null) {         // it will then check to see if the node has a right child and if it does, it will call the recursive helper method on the right child.
                     new Traverse(currentNode.right);
                 }
             }
         }
         new Traverse(root);
-        return results;
+        return results;                                 // it will add the values of the nodes to the results ArrayList and then return the results ArrayList.
     }
     // end of DFSInOrder method ///
 
